@@ -5,7 +5,7 @@ import router from './routes/routes'
 import connectToMongo from './config/config'
 
 const app: Application = express()
-const PORT: number = 5000
+const PORT: string = process.env.PORT as string
 const corsOptions = {
   origin: 'https://jadwalplus-client.vercel.app',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
